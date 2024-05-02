@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <img id="img_prin" src="escudofe.jpg">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div>
+                
+                <label for="nomecompleto">Nome Completo</label>
+                <input id="nomecompleto" required type="text">
+
+                <label for="email">E-mail</label>
+                <input id="email" placeholder="seuemail@gmail.com" required type="email">
+
+                <label for="telefone">Telefone</label>
+                <input id="telefone" placeholder="(xx)xxxx-xxx" required type="tel">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" required rows="10" id="mensagem"></textarea>
+
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email">Email</label>
+                <input type="radio" name="contato" id="radio-email">
+
+                <label for="radio-telefone">Telefone</label>
+                <input type="radio" name="contato" id="radio-telefone">
+
+                <label for="radio-whatsapp">Whatsapp</label>
+                <input type="radio" name="contato" checked id="radio-whatsapp">
+            </div>
+            <label>
+                <input type="checkbox" name="contato" checked id="contato">
+                <p>Gostaria de receber nosso contato?</p>
+            </label>
+
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </div>
+
+            <input type="submit" class="enviar" value="Enviar Formulario">
+        </form>
+    </main>
+    <footer>
+        <img src="logo-branco.png">
+        <p>&copy;copyright Barbearia alura - Desenvolvido por Guilherme S.</p>
+    </footer>
+</body>
+
+</html>
